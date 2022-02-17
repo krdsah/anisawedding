@@ -76,22 +76,6 @@ $(window).scroll(function fix_element() {
     return fix_element;
   }());
 
-$('.bxslider').bxSlider({
-	auto: true,
-	controls: false,
-	mode: 'vertical',
-	moveSlides: 1,
-	slideMargin: 100,
-	infiniteLoop: true,
-	slideHeight: 600,
-	minSlides: 1,
-	maxSlides: 1,
-	speed: 800,
-	pager: false
-});
-
-
-
 
 	var arr = ["white","blue","black"];
     var i = 0;
@@ -127,14 +111,9 @@ $('.w__desc').find('img').click(function() {
 					});
 
 
-$(".trigger-in").on('click', function(){
-
+$(".trigger-in").click(function(){
 	$(".preloader").hide("slow");
 });
 
 
-
-$(window).on('load', function(){
-	$(".preloader").hide("slow");
-})
 
