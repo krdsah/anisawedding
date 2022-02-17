@@ -127,11 +127,12 @@ $('.w__desc').find('img').click(function() {
 					});
 
 
-$(".toggle--menu").click(function(){
+$(".trigger-in").on('click', function(){
 
-	$(".menu-mobile").slideToggle("900")
-
+	$(".preloader").hide("slow");
 });
+
+
 
 $(window).on('load', function(){
 	$(".preloader").hide("slow");
