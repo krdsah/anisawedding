@@ -93,7 +93,7 @@ $('.w__desc').find('img').click(function() {
 
 
 $(".trigger-in").click(function(){
-	$(".preloader").hide("slow");
+	$(".preloader").slideUp("slow")
 });
 
 
