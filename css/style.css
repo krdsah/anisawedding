@@ -830,6 +830,9 @@ to {
 	max-width: 100%;
 	margin: 1rem auto;
 }
+.w__comments iframe {
+	z-index: 10000
+}
 
 
 /* Media Query */
