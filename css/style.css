@@ -825,7 +825,11 @@ to {
 	width: 100%;
 	height: 300px;
 }
-
+iframe {
+	max-width: 90%;
+	margin: auto;
+	z-index: 10000
+}
 
 
 /* Media Query */
