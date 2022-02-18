@@ -219,7 +219,7 @@ body {
 	z-index: 100010
 }
 .preloader .container {
-	background: linear-gradient(to bottom, rgba(228,54,189,.4), white) 0 0 no-repeat, url(../img/bg.jpg) 0 0 no-repeat;
+	background: linear-gradient(to bottom, rgba(228,54,189,.4), white) 0 0 no-repeat, url(../img/bg.webp) 0 0 no-repeat;
 	background-size:100% 50vh;
 	height: 100%;
 	width: 100%;
@@ -294,7 +294,8 @@ body {
 }
 
 .bg {
-	background: linear-gradient(45deg,rgba(216,0,0,.6), rgba(195,0,158,.8)) 0 0 no-repeat;
+	background:linear-gradient(45deg,rgba(216,0,0,.7), rgba(195,0,158,.6), transparent) 0 0 no-repeat, url(../img/bg2.webp) 0 0 no-repeat;
+	background-size: cover, cover;
 	clip-path: polygon(
     0 0,
     100% 0,
@@ -365,13 +366,16 @@ body {
 
 
 .w__header .w__desc .left, .w__header .w__desc .right{
+	background:linear-gradient(to bottom, transparent, 
+#fff) 0 0 no-repeat, url(../img/rose.webp) 0% 0% no-repeat;
+	background-size: cover, 100% 140px;
 	text-align: center;
-	background-size: 100% 160px;
 	background-color: #fff;
 	padding: 2rem 0;
 	border-radius: 0.25rem;
 	box-shadow: 0 0 15px rgba(0,0,0,0.015);
 }
+
 .w__header .w__desc .left .head,
 .w__header .w__desc .right .head {
 	position: relative;
@@ -443,7 +447,7 @@ to {
 
 
 .w__desc .left:fullscreen{
-	background: url(../img/bg.jpg) 0 0 no-repeat;
+	background: url(../img/bg.webp) 0 0 no-repeat;
 	background-size: cover;
 	color: #fff;
 	width: 100vh;
@@ -486,7 +490,7 @@ to {
     -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 .w__desc .right:fullscreen{
-	background: url(../img/bg.jpg) 0 0 no-repeat;
+	background: url(../img/bg.webp) 0 0 no-repeat;
 	background-size: cover;
 	color: #fff;
 	width: 100vh;
@@ -687,11 +691,12 @@ to {
 	padding: 3rem 1rem 1rem;
 	text-align: center;
 }
+
 .w__date .container{
 	max-width: 95%;
 	width: 100%;
 	padding: 1rem;
-	color: #616161;
+	color: #ffffff;
 	display: flex;
 	gap: 5px 5px;
 	justify-content: center;
@@ -709,8 +714,9 @@ to {
 }
 .w__date .container div{
 	border-radius: 0.50rem;
-	background: linear-gradient(to bottom, rgba(198,0,158,.5), transparent) 0 0 no-repeat;
-	background-size: 100% 150px;
+	background: linear-gradient(to bottom, transparent, 
+#B142F9) 0 0 no-repeat, url(../img/rose.webp) 0% 50% no-repeat;
+	background-size: cover, cover;
 	background-color: #ffffff;
 	height:400px;
 	width: 100%;
@@ -763,19 +769,22 @@ to {
 	font-size: 18px;
 	font-family: var(--sec-fonts)
 }
-
 .w__receptions .left  {
+	background: linear-gradient(to bottom, transparent, 
+#B142F9) 0 0 no-repeat, url(../img/bg3.webp) 50% 50% no-repeat;
+	background-size: cover, cover;
 	clip-path: polygon(100% 0, 100% 100%, 50% 74%, 0 100%, 0 0);
-	background: #B142F9;
 	width: 100%;
 	padding: 2rem 1rem 8rem;
-
+	min-height: 600px;
 }
 .w__receptions .right {
+	background: linear-gradient(to bottom, transparent, #FF1F91) 0 0 no-repeat, url(../img/bg2.webp) 50% 50% no-repeat;
+	background-size: cover, cover;
 	clip-path: polygon(100% 0, 100% 100%, 50% 74%, 0 100%, 0 0);
-	background: #FF1F91;
 	width: 100%;
 	padding: 2rem 2rem 8rem;
+	min-height: 600px;
 }
 .w__receptions h4{
 	font-size: 3rem;
@@ -805,13 +814,17 @@ to {
 }
 
 .w__footer {
+	background: #ffffff;
 	position: relative;
 	text-align: center;
-	padding: 12rem 2rem
+	margin: 12rem 1rem;
+	padding: 1rem;
+	border-radius: 0.25rem;
+	box-shadow: 0 0 15px rgba(0,0,0,.025);
 }
 .w__footer a {
 	color: gold;
-	text-devoration: none
+	text-decoration: none
 }
 .trigger-audio {
 	position: fixed;
@@ -842,6 +855,9 @@ to {
 /* Media Query */
 
 @media only screen and (min-width: 320px) and (max-width: 540px){
+.bg {
+	height: 200px;
+}
 .left-v, .right-v { display: none }
 body {
 	padding: 0
